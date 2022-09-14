@@ -1,9 +1,10 @@
-import type { NextPage } from 'next';
+import Dashboard from '../components/dashboard/Dashboard';
+import Layout from '../components/layout/Layout';
 
-const Home: NextPage = () => {
+export default function Index() {
   return (
-    <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <Layout title="Ooredoo Algerie">
+      <Dashboard />
+    </Layout>
   );
-};
-
-export default Home;
+}
