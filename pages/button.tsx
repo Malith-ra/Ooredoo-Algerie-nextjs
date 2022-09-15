@@ -1,4 +1,4 @@
-import Buttons from '../components/category/Category';
+import Buttons from '../components/buttons/Buttons';
 import Layout from '../components/layout/Layout';
 
 export default function categoryPage() {

@@ -24,7 +24,7 @@ const Layout = ({ children, title }: any) => {
 
         <div className="flex-grow text-gray-800">
           <Header />
-          {children}
+          <div className="p-6">{children}</div>
         </div>
 
         <Footer />
