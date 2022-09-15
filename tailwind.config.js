@@ -19,8 +19,7 @@ module.exports = {
         // ...
       },
       fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
+        rubik: 'Rubik',
       },
       borderRadius: {
         '4xl': '3rem',

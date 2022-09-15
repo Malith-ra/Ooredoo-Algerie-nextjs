@@ -1,10 +1,16 @@
 import React from 'react';
 
-const FilledButton = ({ className, text }: any) => {
+const FilledButton = ({
+  children,
+  className,
+}: {
+  children: string;
+  className: string;
+}) => {
   return (
     <div>
       <button type="button" className={className}>
-        {text}
+        {children}
       </button>
     </div>
   );
