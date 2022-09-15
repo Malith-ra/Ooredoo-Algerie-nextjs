@@ -51,6 +51,15 @@ const Nav = ({ sidebarOutsideClick }: any) => {
         >
           <div className="h-10" />
         </NavItem>
+        <NavItem
+          hrefLink="/typography"
+          sidebarStatus={sidebarStatus}
+          menuTitle="Typography"
+          subMenu={false}
+          subMenuArray={null}
+        >
+          <div className="h-10" />
+        </NavItem>
       </nav>
     </>
   );
