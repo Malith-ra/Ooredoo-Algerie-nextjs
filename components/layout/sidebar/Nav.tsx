@@ -21,16 +21,16 @@ const Nav = ({ sidebarOutsideClick }: any) => {
   //if menu has chile menu then  use separate array
   const childMenu = [
     {
-      subMenuTitle: 'child One',
-      linkHref: '/',
+      subMenuTitle: 'Rubik',
+      linkHref: '/rubik',
     },
     {
-      subMenuTitle: 'child Two',
-      linkHref: '/',
+      subMenuTitle: 'Noto Sans',
+      linkHref: '/NotoSans',
     },
     {
-      subMenuTitle: 'child Three',
-      linkHref: '/',
+      subMenuTitle: 'Outfit',
+      linkHref: '/Outfit',
     },
   ];
 
@@ -52,11 +52,11 @@ const Nav = ({ sidebarOutsideClick }: any) => {
           <div className="h-10" />
         </NavItem>
         <NavItem
-          hrefLink="/typography"
+          hrefLink="#"
           sidebarStatus={sidebarStatus}
           menuTitle="Typography"
-          subMenu={false}
-          subMenuArray={null}
+          subMenu={true}
+          subMenuArray={childMenu}
         >
           <div className="h-10" />
         </NavItem>

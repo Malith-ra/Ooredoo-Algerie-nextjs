@@ -21,7 +21,7 @@ const NavItem = ({
       setSubMenuToggleStatus(false);
     }
   }, [sidebarStatus]);
-  //console.log('submenu', sidebarStatus)
+
   return (
     <>
       <Link href={hrefLink}>
@@ -32,6 +32,25 @@ const NavItem = ({
           <h4 className="text-center">{menuTitle}</h4>
         </div>
       </Link>
+      {/* Chile Menu */}
+      {subMenu && (
+        <ul
+          className={`${
+            subMenuToggleStatus ? '' : 'hidden'
+          } text-white space-y-2 ml-3`}
+        >
+          {subMenuArray.map((subMenu: any, index: any) => (
+            <Link href={subMenu.linkHref} key={index}>
+              <li
+                className="cursor-pointer active:text-orange-400 border rounded-md pl-4 py-1 border-gray-300 hover:text-red-600"
+                key={index}
+              >
+                {subMenu.subMenuTitle}
+              </li>
+            </Link>
+          ))}
+        </ul>
+      )}
     </>
   );
 };

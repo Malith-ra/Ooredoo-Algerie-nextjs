@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
-import Typography from '../components/Typography/Typography';
+import Rubik from '../components/Rubik/Rubik';
 
 const typography = () => {
   return (
     <div>
       <Layout title="typography">
-        <Typography />
+        <Rubik />
       </Layout>
     </div>
   );
