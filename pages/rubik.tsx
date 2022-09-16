@@ -1,15 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
-import Rubik from '../components/Rubik/Rubik';
+import RubikFont from '../components/Rubik/Rubik';
 
-const typography = () => {
+const Rubik = () => {
   return (
     <div>
       <Layout title="typography">
-        <Rubik />
+        <RubikFont />
       </Layout>
     </div>
   );
 };
 
-export default typography;
+export default Rubik;
