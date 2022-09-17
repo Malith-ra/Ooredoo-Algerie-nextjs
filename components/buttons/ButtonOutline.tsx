@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const ButtonsFilled = () => {
+const ButtonOutline = () => {
   return (
     <div className="flex">
       <div className="mr-5">
@@ -19,4 +19,4 @@ const ButtonsFilled = () => {
   );
 };
 
-export default ButtonsFilled;
+export default ButtonOutline;
