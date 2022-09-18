@@ -22,11 +22,13 @@ module.exports = {
           google: '#898989',
         },
         ash: { 100: '#CFCFCF', 200: '#EEEEEE' },
+        rose: '#FF585D',
         // ...
       },
       fontFamily: {
         rubik: 'Rubik',
         NotoSans: 'Noto Sans',
+        outfit: 'Outfit',
       },
       borderRadius: {
         '4xl': '3rem',

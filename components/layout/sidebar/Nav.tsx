@@ -60,6 +60,15 @@ const Nav = ({ sidebarOutsideClick }: any) => {
         >
           <div className="h-10" />
         </NavItem>
+        <NavItem
+          hrefLink="/carousel"
+          sidebarStatus={sidebarStatus}
+          menuTitle="carousel"
+          subMenu={false}
+          subMenuArray={null}
+        >
+          <div className="h-10" />
+        </NavItem>
       </nav>
     </>
   );
