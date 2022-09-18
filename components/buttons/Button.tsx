@@ -9,6 +9,7 @@ interface ButtonProps
   height: string;
   size: string;
   className: string;
+  icon?: React.ReactElement;
 }
 
 const Button = ({
@@ -17,6 +18,7 @@ const Button = ({
   children,
   size,
   className,
+  icon,
   ...props
 }: ButtonProps) => {
   let style = useMemo(
@@ -30,6 +32,7 @@ const Button = ({
 
   return (
     <button {...props} style={style} className={className}>
+      {icon}
       {children}
     </button>
   );
