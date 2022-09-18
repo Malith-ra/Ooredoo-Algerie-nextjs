@@ -24,7 +24,7 @@ const ButtonIcon = () => {
           size="14px"
           icon={<GoogleIcon />}
         >
-          REGISTER
+          GOOGLE
         </Button>
       </div>
     </div>

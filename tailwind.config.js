@@ -21,6 +21,7 @@ module.exports = {
           fb: '#1877F2',
           google: '#898989',
         },
+        ash: { 100: '#CFCFCF', 200: '#EEEEEE' },
         // ...
       },
       fontFamily: {
