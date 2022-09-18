@@ -13,9 +13,9 @@ module.exports = {
         current: 'currentColor',
         white: '#ffffff',
 
-        red: {
+        cherry: {
           100: '#ED1C24',
-          200: '#fff',
+          200: '#D6001C',
         },
         // ...
       },
