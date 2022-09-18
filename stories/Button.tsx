@@ -2,47 +2,40 @@ import React from 'react';
 import './button.css';
 
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
+  children: string;
+  width: string;
+  height: string;
+  size: string;
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
+  width,
+  height,
+  children,
+  size,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  let scale = 1;
+  if (size === 'sm') scale = 0.75;
+  if (size === 'lg') scale = 1.5;
+
+  const style = {
+    width: width,
+    height: height,
+    fontSize: size,
+  };
+
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <div className="py-2 my-2">
+      <button
+        type="button"
+        className="rounded-4xl border border-red-200 bg-slate-900 text-white my-2  font-rubik leading-[17px] font-semibold not-italic"
+        // style={style}
+        {...props}
+      >
+        {children}
+      </button>
+    </div>
   );
 };

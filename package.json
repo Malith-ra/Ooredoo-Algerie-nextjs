@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build-storybook": "build-storybook",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "storybook": "start-storybook -p 6006"
+    "lint": "next lint"
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -18,14 +16,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-interactions": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
-    "@storybook/builder-webpack4": "^6.5.12",
-    "@storybook/manager-webpack4": "^6.5.12",
-    "@storybook/react": "^6.5.12",
-    "@storybook/testing-library": "0.0.13",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
